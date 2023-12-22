@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ---------------mobile version ------------------*/
+@media only screen and (min-width: 280px) {
+  body {
+    width: 450px;
+    height: 670px;
+  }
+
+  .header {
+    display: flex;
+    width: 530px;
+    height: 100px;
+    background: #fff;
+    padding-left: 30px;
+  }
+
+  .shadow {
+    width: 450px;
+    height: 1px;
+    background: #d9fff5;
+    margin: 0;
+    padding: 0;
+  }
+  .mein {
+    margin-top: 5px;
+    width: 580px;
+    height: 1000px;
+    background: #f8f8f8;
+  }
+
+  .mein__title {
+    width: 304px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-top: 16px;
+  }
+  .call,
+  .chat,
+  .profile,
+  .hiddiv,
+  .dop-text,
+  .statusrem,
+  .zayavka {
+    display: none;
+  }
+  img {
+    padding-right: 16px;
+    padding-top: 19px;
+  }
+  .burger {
+    margin-left: 25px;
+  }
+
+  .uslugi {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 28px;
+    width: 288px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+  }
+  .nav__menu {
+    width: 520px;
+    height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 8px;
+    padding-top: 32px;
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 20px;
+    list-style-type: none;
+    gap: 19px;
+    white-space: nowrap;
+    align-items: baseline;
+  }
+  .nav {
+    overflow-x: auto;
+    width: 510px;
+    height: 80px;
+  }
+  .nav__rem {
+    width: 285px;
+    height: 40px;
+    border: 2px solid #b8ffec;
+    background: #fff;
+    padding: 8px 9px;
+  }
+  .nav__dop {
+    width: 270px;
+    height: 40px;
+    padding: 8px 9px;
+  }
+
+  .text {
+    width: 430px;
+    height: 250px;
+    padding-top: 24px;
+    padding-left: 25px;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 23px;
+    text-align: left;
+  }
+  .next {
+    width: 105px;
+    height: 25px;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 20px;
+    padding: 0;
+    display: contents;
+  }
+  .readmore {
+    width: 50px;
+    margin-bottom: -9px;
+    margin-right: -20px;
+  }
+
+  .subtitle {
+    display: flex;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-top: 16px;
+  }
+  .pictur img {
+    width: 480px;
+    height: 280px;
+    padding: 0px;
+    margin-top: 16px;
+  }
+  .checkstatus {
+    padding-right: 2px;
+  }
+
+  .highlight {
+    width: 4px;
+    height: 40px;
+    background: #41f6d7;
+    padding: 0px;
+    padding-top: 24px;
+    display: flex;
+  }
+}
+/* --------------------tab version--------------------- */
+@media only screen and (min-width: 768px) {
+  body {
+    /* width: 1024px;
+    height: 600px; */
+  }
+  .header {
+    /* width: 1024px;
+    height: 88px; */
+    background: #fff;
+    margin-right: 16px;
+    display: flex;
+    gap: 19px;
+    padding: 16px;
+  }
+  .header img {
+    padding: 0px;
+  }
+  .call,
+  .chat,
+  .profile,
+  .hiddiv,
+  .dop-text {
+    display: flex;
+  }
+  .call {
+    margin-left: 251px;
+  }
+
+  .shadow {
+    width: 768px;
+    height: 1px;
+    background: #d9fff5;
+    margin: 0;
+    padding: 0;
+  }
+  .mein {
+    width: 1024px;
+    /* height: 1370px; */
+    background: #f8f8f8;
+  }
+  .mein__title {
+    padding-left: 0px;
+  }
+  .nav {
+    overflow-x: auto;
+    width: 1024px;
+    height: 80px;
+    padding-left: 25px;
+  }
+  .nav__menu {
+    width: 970px;
+    height: 40px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 15px;
+    list-style-type: none;
+    gap: 16px;
+    white-space: nowrap;
+    align-items: baseline;
+    text-align: center;
+  }
+  content {
+    display: flex;
+    width: 720px;
+    height: 210px;
+  }
+  .pictur {
+    display: flex;
+    justify-content: flex-end;
+    width: 780px;
+    height: 500pxpx;
+  }
+  .pictur img {
+    width: 485px;
+    height: 280px;
+    padding: 0px;
+    margin-top: -320px;
+    margin-right: -190px;
+  }
+  .text {
+    width: 460px;
+    height: 160px;
+    padding-top: 24px;
+    padding-left: 10px;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 20px;
+    padding-left: 25px;
+  }
+  .next {
+    width: 105px;
+    height: 24px;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 16px;
+
+    padding: 0px;
+  }
+}
+/* -------------------------------------desktop------------- */
+@media only screen and (min-width: 1025px) {
+  body {
+    width: 1400px;
+    height: 800px;
+  }
+  .mein {
+    width: 1460px;
+    height: 1000px;
+    background: #f8f8f8;
+  }
+
+  .burger,
+  .hiddiv,
+  .logo,
+  .call,
+  .chat,
+  .profile,
+  .repair,
+  .divider,
+  .checkstatus,
+  .shad {
+    display: none;
+  }
+  .header {
+    width: 1460px;
+    /* height: 88px; */
+    margin-right: 16px;
+    background: #f8f8f8;
+    gap: 15px;
+    display: flex;
+    padding-left: 980px;
+    margin-top: 20px;
+    position: absolute;
+  }
+  .zayavka,
+  .statusrem {
+    display: flex;
+    color: #1b1c21;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 16px;
+    gap: 9px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .nav {
+    width: 1380px;
+    overflow: hidden;
+    padding-left: 25px;
+    margin-top: 40px;
+  }
+  .nav__menu {
+    width: 1400px;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    color: #7e7e82;
+    font-family: TT Lakes;
+    font-size: 20px;
+    list-style-type: none;
+
+    white-space: nowrap;
+    align-items: baseline;
+  }
+
+  .text {
+    width: 480px;
+    height: 160px;
+    padding-top: 24px;
+    padding-left: 10px;
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 21px;
+    padding-left: 25px;
+  }
+  .pictur {
+    display: flex;
+    justify-content: flex-end;
+    width: 780px;
+    height: 500pxpx;
+    margin-left: 225px;
+    margin-top: 40px;
+  }
+  .pictur img {
+    width: 710px;
+    height: 390px;
+    padding: 0px;
+    margin-top: -380px;
+    margin-right: -350px;
+  }
+  .more {
+    padding-top: 15px;
+  }
+  .uslugi {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 30px;
+    width: 320px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+  }
+  .mein__title {
+    padding-top: 30px;
+    position: relative;
+  }
+  .nav__rem {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #b8ffec;
+    background: #fff;
+    padding: 8px 9px;
+  }
+  .readmore {
+    width: 40px;
+    margin-bottom: -13px;
+  }
+  .next {
+    font-size: 20px;
+  }
+}
