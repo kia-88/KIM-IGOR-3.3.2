@@ -28,7 +28,7 @@
   .mein {
     margin-top: 5px;
     width: 580px;
-    height: 1000px;
+    height: 1200px;
     background: #f8f8f8;
   }
 
@@ -188,7 +188,7 @@
   }
   .mein {
     width: 1024px;
-    /* height: 1370px; */
+    height: 1370px;
     background: #f8f8f8;
   }
   .mein__title {
