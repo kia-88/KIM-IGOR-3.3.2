@@ -336,8 +336,7 @@
   }
   .nav__menu {
     width: 1400px;
-
-    display: flex;
+display: flex;
     margin: 0;
     padding: 0;
     padding-top: 32px;
