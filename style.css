@@ -336,7 +336,8 @@
   }
   .nav__menu {
     width: 1400px;
-display: flex;
+
+    display: flex;
     margin: 0;
     padding: 0;
     padding-top: 32px;
@@ -522,7 +523,7 @@ display: flex;
 @media only screen and (min-width: 1150px) {
   .mein {
     width: 2300px;
-    height: 1255px;
+    height: 1430px;
     background: #f8f8f8;
   }
   .header {
@@ -532,7 +533,7 @@ display: flex;
     background: #f8f8f8;
     gap: 40px;
     display: flex;
-    padding-left: 1560px;
+    padding-left: 1510px;
     margin-top: 20px;
     position: absolute;
   }
@@ -550,7 +551,7 @@ display: flex;
   .nav {
     width: 2300px;
     overflow: hidden;
-    padding-left: 40px;
+    padding-left: 300px;
     margin-top: 40px;
   }
   .nav__menu {
@@ -575,14 +576,13 @@ display: flex;
   }
 
   .text {
-    width: 700px;
+    width: 970px;
     height: 400px;
     padding-top: 60px;
-    padding-left: 10px;
     color: #1b1c21;
     font-family: TT Lakes;
     font-size: 30px;
-    padding-left: 25px;
+    padding-left: 310px;
   }
   .pictur {
     display: flex;
@@ -615,6 +615,7 @@ display: flex;
   .mein__title {
     padding-top: 30px;
     position: relative;
+    margin-left: 250px;
   }
   .nav__rem {
     width: 390px;
