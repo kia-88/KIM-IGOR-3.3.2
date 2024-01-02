@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 /* ---------------mobile version ------------------*/
@@ -180,6 +181,7 @@
   body {
     /* width: 1024px;
     height: 600px; */
+    overflow: auto;
   }
   .header {
     /* width: 1024px;
@@ -279,19 +281,16 @@
     padding: 0px;
   }
 }
-@media only screen and (width: 1024px) {
+
+/* -------------------------------------desktop------------- */
+@media only screen and (min-width:1100px) {
   .mein {
-    width: 1460px;
-    height: 1200px;
+    width: 1470px;
+    height: 150%;
     background: #f8f8f8;
   }
-}
-/* -------------------------------------desktop------------- */
-@media only screen and (min-width: 1025px) {
-  .mein {
-    width: 1460px;
-    height: 920px;
-    background: #f8f8f8;
+  body{
+    overflow: hidden;
   }
 
   .burger,
@@ -307,7 +306,7 @@
     display: none;
   }
   .header {
-    width: 1460px;
+    width: 1350px;
     /* height: 88px; */
     margin-right: 16px;
     background: #f8f8f8;
@@ -329,13 +328,13 @@
     white-space: nowrap;
   }
   .nav {
-    width: 1380px;
+    width: 1100px;
     overflow: hidden;
     padding-left: 25px;
     margin-top: 40px;
   }
   .nav__menu {
-    width: 1400px;
+    width: 1100px;
 
     display: flex;
     margin: 0;
@@ -407,120 +406,9 @@
     font-size: 20px;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .mein {
-    width: 1665px;
-    height: 1050px;
-    background: #f8f8f8;
-  }
-  .header {
-    width: 1665px;
-    /* height: 88px; */
-    margin-right: 16px;
-    background: #f8f8f8;
-    gap: 40px;
-    display: flex;
-    padding-left: 1130px;
-    margin-top: 20px;
-    position: absolute;
-  }
-  .zayavka,
-  .statusrem {
-    display: flex;
-    color: #1b1c21;
-    text-align: right;
-    font-family: TT Lakes;
-    font-size: 20px;
-    gap: 9px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .nav {
-    width: 1666px;
-    overflow: hidden;
-    padding-left: 25px;
-    margin-top: 40px;
-  }
-  .nav__menu {
-    width: 1666px;
 
-    display: flex;
-    margin: 0;
-    padding: 0;
-    padding-top: 32px;
-    color: #7e7e82;
-    font-family: TT Lakes;
-    font-size: 25px;
-    list-style-type: none;
 
-    white-space: nowrap;
-    align-items: baseline;
-  }
-  .nav__dop {
-    width: 270px;
-    height: 40px;
-    padding: 8px 9px;
-    margin-right: 25px;
-  }
-
-  .text {
-    width: 550px;
-    height: 160px;
-    padding-top: 60px;
-    padding-left: 10px;
-    color: #1b1c21;
-    font-family: TT Lakes;
-    font-size: 25px;
-    padding-left: 25px;
-  }
-  .pictur {
-    display: flex;
-    justify-content: flex-end;
-    width: 780px;
-    height: 500pxpx;
-    margin-left: 225px;
-    margin-top: 40px;
-  }
-  .pictur img {
-    width: 820px;
-    height: 480px;
-    padding: 0px;
-    margin-top: -420px;
-    margin-right: -460px;
-  }
-  .more {
-    padding-top: 15px;
-  }
-  .uslugi {
-    color: #1b1c21;
-    font-family: TT Lakes;
-    font-size: 30px;
-    width: 320px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    padding-left: 16px;
-  }
-  .mein__title {
-    padding-top: 30px;
-    position: relative;
-  }
-  .nav__rem {
-    width: 390px;
-    height: 50px;
-    border: 2px solid #b8ffec;
-    background: #fff;
-    padding: 8px 9px;
-  }
-  .readmore {
-    width: 40px;
-    margin-bottom: -13px;
-  }
-  .next {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1800px) {
   .mein {
     width: 2300px;
     height: 1430px;
