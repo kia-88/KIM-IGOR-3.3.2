@@ -109,7 +109,7 @@ body {
     width: 1120px;
   }
   .mein {
-    height: 1270px;
+    height: 1420px;
   }
   .header__call,
   .header__chat,
@@ -139,8 +139,8 @@ body {
   }
 }
 
-/*********************** tab ****************1280px***************************************/
-@media only screen and (min-width: 1280px) {
+/*********************** desk ****************1280px***************************************/
+@media only screen and (min-width: 1279px) {
   .header__burger,
   .header__hiddiv,
   .header__logo,
