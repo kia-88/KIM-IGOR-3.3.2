@@ -8,12 +8,13 @@ body {
 .container {
   display: grid;
 }
+body {
+  overflow-y: hidden;
+}
 /********************************** header ***************************/
 
 @media only screen and (min-width: 320px) {
-  body {
-    overflow-y: hidden;
-  }
+ 
   .header {
     display: flex;
     justify-content: space-between;
@@ -85,7 +86,7 @@ body {
   .subtitle {
     padding: 16px 20px;
     color: #1b1c21;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .readmore {
@@ -106,8 +107,12 @@ body {
 /*********************** tab ****************768px***************************************/
 @media only screen and (min-width: 768px) {
   .mein__menu {
-    width: 1120px;
+    min-width: 800px;
   }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 25px;}
   .mein {
     height: 1420px;
   }
@@ -137,6 +142,35 @@ body {
   .desk-text {
     display: none;
   }
+}
+@media only screen and (width: 820px) {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 25px;}
+  .mein {
+    height: 1420px;
+    width: 820px;
+  }
+ 
+
+  .subtitle__dop {
+    display: contents;
+  }
+  .sub {
+    display: flex;
+    font-size: 17px;
+  }
+
+  .pictur img {
+    float: right;
+    margin-top: 20px;
+  }
+  .desk-text {
+    display: none;
+  }
+
 }
 
 /*********************** desk ****************1280px***************************************/
