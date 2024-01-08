@@ -3,178 +3,95 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: TT Lakes;
+  overflow: auto;
+  background-color: #f8f8f8;
 }
 
-.container {
-  display: grid;
-}
-body {
-  overflow-y: hidden;
-}
 /********************************** header ***************************/
 
-@media only screen and (min-width: 320px) {
- 
+@media only screen and (min-width: 279px) {
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 17px 25px;
+    align-items: center;
+    padding: 0px 16px;
+    border-bottom: 1px solid #D9FFF5;
+    height: 87px;
+    background-color: #FFFFFF;
+    padding-right: 5px;
   }
-  .shadow__line {
-    width: 100%;
-    height: 2px;
-    background: #0d6951;
-  }
-  .header__burger,
-  .header__repair,
-  .header__checkstatus {
-    width: 50px;
-    height: 50px;
-  }
-
-  .header__call,
-  .header__chat,
-  .header__profile,
-  .header__hiddiv,
-  .header__dop-text,
+  
   .header__statusrem,
-  .header__zayavka,
-  .subtitle__dop,
-  .desk-text {
+  .header__zayavka
+   {
     display: none;
   }
-
-  /******************************title **************************/
-  .mein {
-    background: #f8f8f8;
-    height: 1100px;
-  }
-
   .title {
     display: flex;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-  }
-  .title h1 {
-    padding-left: 16px;
-    margin: inherit;
-  }
-  .title img {
-    display: inline-block;
-  }
+}
+.title h1 {
+  padding-left: 25px;}
 
-  /********************* menu ***************/
-
-  .mein__menu {
-    width: 400px;
+  .mein__menu{
     display: flex;
-    white-space: nowrap;
-    overflow-x: scroll;
-    color: #7e7e82;
-    font-size: 20px;
-    gap: 25px;
-    padding-top: 30px;
+   white-space: nowrap;
+    font-size: 18px;
+    color: #7E7E82;
+    line-height: 40px;
+    overflow-x: auto;
     padding-left: 30px;
+  }
+  .mein__menu div{
+    padding-right: 25px;
   }
   .nav__rem {
-    border: 2px solid #b8ffec;
-    width: 270px;
-    height: 40px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
   }
-
-  .subtitle {
+  .sub-text {
     padding: 16px 20px;
     color: #1b1c21;
-    font-size: 17px;
-  }
-
-  .readmore {
-    display: flex;
-    padding-left: 30px;
-  }
-  .readmore img {
-    width: 40px;
-    height: 50px;
-  }
-
-  .pictur img {
-    width: 515px;
-    padding-left: 20px;
-  }
-}
-
-/*********************** tab ****************768px***************************************/
-@media only screen and (min-width: 768px) {
-  .mein__menu {
-    min-width: 800px;
-  }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 25px;}
-  .mein {
-    height: 1420px;
-  }
-  .header__call,
-  .header__chat,
-  .header__profile {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    padding-right: 20px;
-  }
-  .header__logo {
-    padding-right: 300px;
-  }
-
-  .subtitle__dop {
-    display: contents;
-  }
-  .sub {
-    display: flex;
-  }
-
-  .pictur img {
-    float: right;
-    margin-top: 20px;
-  }
-  .desk-text {
-    display: none;
-  }
-}
-@media only screen and (width: 820px) {
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 25px;}
-  .mein {
-    height: 1420px;
-    width: 820px;
-  }
+    font-size: 17px;}
+    .readmore {
+      display: flex;}
+      .pictur img {
+        width: 100%;}
+      }
  
-
-  .subtitle__dop {
-    display: contents;
+/*********************** tab ****************768px***************************************/
+ @media only screen and (min-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    border-bottom: 1px solid #D9FFF5;
+    height: 87px;
+    background-color: #FFFFFF;
+  
+  }
+  
+  .header__logo{
+   padding-right: 220px;
   }
   .sub {
     display: flex;
-    font-size: 17px;
+    padding-top: 50px;
   }
-
-  .pictur img {
-    float: right;
-    margin-top: 20px;
+  .sub-text{
+    min-width: 45%;
   }
-  .desk-text {
-    display: none;
+  .pictur{
+    min-width: 50%;
   }
 
 }
-
-/*********************** desk ****************1280px***************************************/
-@media only screen and (min-width: 1279px) {
+ 
+@media only screen and (min-width: 1020px) {
   .header__burger,
   .header__hiddiv,
   .header__logo,
@@ -187,34 +104,19 @@ body {
   .shadow,
   .subtitle,
   .subtitle__dop,
-  .header {
-    display: none;
+  .header,
+  .tab-pic {
+    display: none;}
+    .mein{
+      padding-top: 50px;
+    }
+    .sub-text{
+      font-size: 21px;
+    }
   }
-  .mein {
-    padding: 90px;
-  }
-  .desk-text {
-    display: block;
-    padding-top: 40px;
-  }
-  .mein__menu {
-    width: 1100px;
-    font-size: 17px;
-  }
-  .pictur img {
-   padding-right: 120px;
-    margin-top: 20px;
-    width: 650px;
-  }
-  .sub {
-    font-size: 20px;
-  }
-  .nav__rem {
-    border: 2px solid #b8ffec;
-    width: 240px;
-    height: 40px;
-  }
-  .title {
-    font-size: 20px;
-  }
-}
+
+
+
+
+
+
