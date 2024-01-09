@@ -139,8 +139,54 @@ body {
     height: 50px;
      }
      .title h1 {
-      padding-right: 65%;
+      padding-right: 45%;
       white-space: nowrap;
      }
      .check{padding-left: 30px;}
+}
+
+
+
+@media only screen and (min-width: 1400px) {
+  .header__burger,
+  .header__hiddiv,
+  .header__logo,
+  .header__call,
+  .header__chat,
+  .header__profile,
+  .header__repair,
+  .header__divider,
+  .header__checkstatus,
+  .shadow,
+  .subtitle,
+  .subtitle__dop,
+  .tab-pic,
+  .header {
+    display: none;
+  }
+  .mein {
+    padding-top: 50px;
+  }
+  .sub-text {
+    font-size: 21px;
+  }
+  .header__zayavka,
+  .check {
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+  }
+  .header__zayavka img,
+  .check img {
+    width: 50px;
+    height: 50px;
+     }
+     .title h1 {
+      padding-right: 45%;
+      white-space: nowrap;
+     }
+     .check{padding-left: 30px;}
+     .container {
+      margin: 0 7%;
+     }
 }
