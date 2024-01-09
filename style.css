@@ -7,7 +7,7 @@ body {
   background-color: #f8f8f8;
 }
 
-
+/********************************** header ***************************/
 
 @media only screen and (min-width: 279px) {
   .header {
@@ -15,83 +15,96 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
-    border-bottom: 1px solid #D9FFF5;
+    border-bottom: 1px solid #d9fff5;
     height: 87px;
-    background-color: #FFFFFF;
-    padding-right: 5px;
+    background-color: #ffffff;
+    padding-right: 25px;
   }
-  
+
   .header__statusrem,
-  .header__zayavka
-   {
+  .header__zayavka,
+  .header__call,
+  .header__chat,
+  .header__profile,
+  .header__hiddiv,
+  .check {
     display: none;
   }
+
   .title {
     display: flex;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-}
-.title h1 {
-  padding-left: 25px;}
+  }
+  .title h1 {
+    padding-left: 25px;
+  }
 
-  .mein__menu{
+  .mein__menu {
     display: flex;
-   white-space: nowrap;
+    white-space: nowrap;
     font-size: 18px;
-    color: #7E7E82;
+    color: #7e7e82;
     line-height: 40px;
     overflow-x: auto;
     padding-left: 30px;
   }
-  .mein__menu div{
+  .mein__menu div {
     padding-right: 25px;
   }
   .nav__rem {
-    border: 2px solid #B8FFEC;
+    border: 2px solid #b8ffec;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   .sub-text {
     padding: 16px 20px;
     color: #1b1c21;
-    font-size: 17px;}
-    .readmore {
-      display: flex;}
-      .pictur img {
-        width: 100%;}
-      }
- 
+    font-size: 17px;
+  }
+  .readmore {
+    display: flex;
+  }
+  .pictur img {
+    width: 100%;
+  }
+}
+
 /*********************** tab ****************768px***************************************/
- @media only screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px;
-    border-bottom: 1px solid #D9FFF5;
+    border-bottom: 1px solid #d9fff5;
     height: 87px;
-    background-color: #FFFFFF;
-  
+    background-color: #ffffff;
   }
-  
-  .header__logo{
-   padding-right: 220px;
+  .header__call,
+  .header__chat,
+  .header__profile,
+  .header__hiddiv {
+    display: flex;
+  }
+
+  .header__logo {
+    padding-right: 220px;
   }
   .sub {
     display: flex;
     padding-top: 50px;
   }
-  .sub-text{
+  .sub-text {
     min-width: 45%;
   }
-  .pictur{
+  .pictur {
     min-width: 50%;
   }
-
 }
- 
-@media only screen and (min-width: 1020px) {
+
+@media only screen and (min-width: 1025px) {
   .header__burger,
   .header__hiddiv,
   .header__logo,
@@ -104,19 +117,30 @@ body {
   .shadow,
   .subtitle,
   .subtitle__dop,
-  .header,
-  .tab-pic {
-    display: none;}
-    .mein{
-      padding-top: 50px;
-    }
-    .sub-text{
-      font-size: 21px;
-    }
+  .tab-pic,
+  .header {
+    display: none;
   }
-
-
-
-
-
-
+  .mein {
+    padding-top: 50px;
+  }
+  .sub-text {
+    font-size: 21px;
+  }
+  .header__zayavka,
+  .check {
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+  }
+  .header__zayavka img,
+  .check img {
+    width: 50px;
+    height: 50px;
+     }
+     .title h1 {
+      padding-right: 65%;
+      white-space: nowrap;
+     }
+     .check{padding-left: 30px;}
+}
